@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Coins from './components/Coins'
+import CoinList from './components/CoinList'
 import Headers from './components/Headers'
 
 class App extends Component {
@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <>
         <Headers />
-        <Coins />
+        <CoinList />
       </>
     )
   }

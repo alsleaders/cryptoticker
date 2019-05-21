@@ -12,3 +12,11 @@ body {
   background: mediumseagreen;
   text-align: center;
 }
+
+main {
+  border: dashed black 1rem;
+}
+
+#coin-box {
+  border: solid gray 0.25rem;
+}
