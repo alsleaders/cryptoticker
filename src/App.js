@@ -4,7 +4,12 @@ import Headers from './components/Headers'
 
 class App extends Component {
   render() {
-    return <>Headers </>
+    return (
+      <>
+        <Headers />
+        <Coins />
+      </>
+    )
   }
 }
 

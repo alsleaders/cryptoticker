@@ -3,10 +3,13 @@ import React, { Component } from 'react'
 class Coins extends Component {
   render() {
     return (
-      <h1>
-        Lots of Coins! Lots of Coins! Lots of Coins! Lots of Coins! Lots of
-        Coins!
-      </h1>
+      <>
+        <h2>Lots of Coins!</h2>
+        <h2>Lots of Coins!</h2>
+        <h2>Lots of Coins!</h2>
+        <h2>Lots of Coins!</h2>
+        <h2>Lots of Coins!</h2>
+      </>
     )
   }
 }
