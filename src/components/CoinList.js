@@ -8,8 +8,9 @@ class CoinList extends Component {
   }
 
   componentDidMount() {
-    console.log('working so far')
     this.getDataFromApi()
+    console.log('working so far')
+    setInterval(this.getDataFromApi, 10000)
   }
 
   getDataFromApi = () => {
@@ -38,7 +39,7 @@ class CoinList extends Component {
                 symbol={coin.symbol}
                 price={coin.quotes.USD.price}
                 id={coin.id}
-                // image='https://s2.coinmarketcap.com/static/img/coins/16x16/${' + this.props.id + '}.png'
+                // oneHour={coin.quotes.USD.percent_change_1hr}
               />
             </>
           )
