@@ -19,4 +19,7 @@ main {
 
 #coin-box {
   border: solid gray 0.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

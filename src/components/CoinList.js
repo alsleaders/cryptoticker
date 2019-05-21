@@ -39,7 +39,9 @@ class CoinList extends Component {
                 symbol={coin.symbol}
                 price={coin.quotes.USD.price}
                 id={coin.id}
-                // oneHour={coin.quotes.USD.percent_change_1hr}
+                oneHour={coin.quotes.USD.percent_change_1h}
+                oneDay={coin.quotes.USD.percent_change_24h}
+                oneWeek={coin.quotes.USD.percent_change_7d}
               />
             </>
           )
