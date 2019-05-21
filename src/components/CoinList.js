@@ -1,4 +1,5 @@
 import CoinBlueprint from './CoinBlueprint'
+import CoinImage from './CoinImage'
 import React, { Component } from 'react'
 
 class CoinList extends Component {
@@ -36,6 +37,8 @@ class CoinList extends Component {
                 name={coin.name}
                 symbol={coin.symbol}
                 price={coin.quotes.USD.price}
+                id={coin.id}
+                // image='https://s2.coinmarketcap.com/static/img/coins/16x16/${' + this.props.id + '}.png'
               />
             </>
           )
