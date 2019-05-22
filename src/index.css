@@ -9,17 +9,67 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background: mediumseagreen;
+  background: darkgray;
   text-align: center;
 }
 
 main {
-  border: dashed black 1rem;
+  max-height: 90%;
+  background: mediumseagreen;
+  border-radius: 2rem;
+}
+
+#be-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+th {
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+td {
+  padding: 0 2rem;
+  align-content: space-around;
+}
+
+#table {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #coin-box {
   border: solid gray 0.25rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-width: 500px;
+  min-height: 200px;
+}
+
+#center-values {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
+  text-align: center;
+  /* min-width: 400px; */
 }

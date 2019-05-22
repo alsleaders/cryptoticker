@@ -4,19 +4,26 @@ import CoinImage from './CoinImage'
 class CoinBlueprint extends Component {
   render() {
     return (
-      <table id="coin-box">
-        <tr>
-          <h3>{this.props.name}</h3>
-          <h4>{this.props.price}</h4>
-          <p>{this.props.symbol}</p>
-          <CoinImage id={this.props.id} />
-        </tr>
-        <tr>
-          <td>{this.props.oneHour}</td>
-          <td>{this.props.oneDay}</td>
-          <td>{this.props.oneWeek}</td>
-        </tr>
-      </table>
+      <section id="table">
+        <table id="coin-box">
+          <tbody>
+            <th>{this.props.name}</th>
+            <th>{this.props.price}</th>
+            <th>{this.props.symbol}</th>
+            <CoinImage id={this.props.id} />
+            <tr>
+              {/* <th>Change in the past hour</th>
+            <th>Change in the past day</th>
+            <th>Change in the past week</th> */}
+            </tr>
+            <tr id="center-values">
+              <td>{this.props.oneHour}</td>
+              <td>{this.props.oneDay}</td>
+              <td>{this.props.oneWeek}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     )
   }
 }
