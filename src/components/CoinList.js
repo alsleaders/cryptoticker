@@ -29,13 +29,13 @@ class CoinList extends Component {
 
   render() {
     console.log(
-      'Money, like language and time zones, are just an arbitrary thing humanity has agreed upon as a thing we value.  I would prefer a sandwich.  Or croissants.  Making tables makes me want croissants.'
+      'Money, along with language and time zones, are all just arbitrary things humanity has agreed upon as things that inherently hold meaning and value.  Right now, I would prefer a sandwich.  Or croissants.  Making tables makes me want croissants.'
     )
     return (
       <main>
-        {this.state.coinArray.map(coin => {
-          return (
-            <section id="be-columns">
+        <section id="be-columns">
+          {this.state.coinArray.map(coin => {
+            return (
               <CoinBlueprint
                 key={coin.name}
                 name={coin.name}
@@ -46,9 +46,9 @@ class CoinList extends Component {
                 oneDay={coin.quotes.USD.percent_change_24h}
                 oneWeek={coin.quotes.USD.percent_change_7d}
               />
-            </section>
-          )
-        })}
+            )
+          })}
+        </section>
       </main>
     )
   }

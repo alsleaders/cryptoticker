@@ -21,11 +21,12 @@ main {
 
 #be-columns {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  /* align-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  text-align: center; */
 }
 
 th {
@@ -35,18 +36,19 @@ th {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 td {
-  padding: 0 2rem;
+  padding: 1rem;
   align-content: space-around;
 }
 
 #table {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
+  align-content: center;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -56,17 +58,29 @@ td {
   border-radius: 2rem;
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  align-content: space-around;
-  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  min-width: 500px;
-  min-height: 200px;
+  margin: 1rem 1rem;
+  max-width: 45%;
+  /* min-height: 200px; */
 }
 
-#center-values {
+#formatting-drama {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+*/ #center-values {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
